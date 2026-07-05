@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>📸 Galeria</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ==========================================================
+         BACKGROUND
+    =========================================================== -->
+
+    <div class="background">
+
+        <div class="aurora"></div>
+
+        <div class="particles"></div>
+
+    </div>
+
+    <!-- ==========================================================
+         CONTAINER
+    =========================================================== -->
+
+    <main class="container">
+
+        <!-- ======================================================
+             HERO
+        ======================================================= -->
+
+        <section class="hero glass">
+
+            <span class="badge">
+
+                📸 Nossas Memórias
+
+            </span>
+
+            <h1>
+
+                Galeria
+                <br>
+                De Momentos
+
+            </h1>
+
+            <p class="subtitle">
+
+                Algumas lembranças merecem ser revisitadas
+                para sempre.
+
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             INTRODUÇÃO
+        ======================================================= -->
+
+        <section class="intro glass">
+
+            <div class="intro-icon">
+
+                ❤️
+
+            </div>
+
+            <h2>
+
+                Cada foto conta uma história.
+
+            </h2>
+
+            <p>
+
+                Existem momentos que nenhuma palavra consegue
+                explicar.
+
+                Felizmente, algumas fotos conseguem guardar
+                um pedacinho dessas lembranças.
+
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             FILTROS
+        ======================================================= -->
+
+        <section class="filters glass">
+
+            <button
+                class="filter-btn active"
+                data-category="todos">
+
+                ✨ Todas
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="nos">
+
+                ❤️ Nós
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="voce">
+
+                📷 Você
+
+            </button>
+
+            <button
+                class="filter-btn"
+                data-category="momentos">
+
+                🌅 Momentos
+
+            </button>
+
+        </section>
+
+        <!-- ======================================================
+             CONTADOR
+        ======================================================= -->
+
+        <section class="gallery-info">
+
+            <p id="galleryCounter">
+
+                0 fotos
+
+            </p>
+
+        </section>
+
+        <!-- ======================================================
+             GALERIA
+        ======================================================= -->
+
+        <section
+            id="gallery"
+            class="gallery-grid">
+                        <!-- As fotos serão criadas automaticamente pelo script.js -->
+
+        </section>
+
+        <!-- ======================================================
+             MODAL DA FOTO
+        ======================================================= -->
+
+        <div
+            id="imageModal"
+            class="modal">
+
+            <button
+                id="closeModal"
+                class="close-btn">
+
+                ✕
+
+            </button>
+
+            <button
+                id="prevImage"
+                class="nav-btn prev">
+
+                ❮
+
+            </button>
+
+            <div class="modal-content">
+
+                <img
+                    id="modalImage"
+                    src=""
+                    alt="Foto">
+
+                <div class="image-info glass">
+
+                    <h3 id="imageTitle">
+
+                        Título da foto
+
+                    </h3>
+
+                    <p id="imageDescription">
+
+                        Descrição da foto.
+
+                    </p>
+
+                    <span id="imageCounter">
+
+                        1 / 1
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <button
+                id="nextImage"
+                class="nav-btn next">
+
+                ❯
+
+            </button>
+
+        </div>
+
+        <!-- ======================================================
+             FOOTER
+        ======================================================= -->
+
+        <footer>
+
+            <div class="footer-heart">
+
+                ❤️
+
+            </div>
+
+            <p>
+
+                Cada fotografia guarda um instante...
+                e cada instante guarda um pedacinho da nossa história.
+
+            </p>
+
+            <span>
+
+                Feito com carinho por James para Issara.
+
+            </span>
+
+                    <!-- ======================================================
+             ESTATÍSTICAS
+        ======================================================= -->
+
+        <section class="stats glass">
+
+            <h2>
+
+                ❤️ Nossa Galeria
+
+            </h2>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <span id="totalPhotos">
+
+                        0
+
+                    </span>
+
+                    <small>
+
+                        Fotos
+
+                    </small>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span>
+
+                        3
+
+                    </span>
+
+                    <small>
+
+                        Categorias
+
+                    </small>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span>
+
+                        ∞
+
+                    </span>
+
+                    <small>
+
+                        Lembranças
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <p>
+
+                Algumas lembranças são eternas.
+                Cada foto desta galeria representa um momento
+                que sempre fará parte da nossa história.
+
+            </p>
+
+        </section>
+        
+        </footer>
+
+    </main>
+
+    <!-- ==========================================================
+         SCRIPTS
+    =========================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
